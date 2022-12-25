@@ -11,8 +11,6 @@ for i in range(len(iris.target_names)):
  print("Label", i , "-",str(iris.target_names[i]))
 classifier = KNeighborsClassifier(n_neighbors=1)
 classifier.fit(x_train, y_train)
-Artificial Intelligence and Machine Learning Lab Manual – 18CSL76
-Department of ISE Page 46
 y_pred=classifier.predict(x_test)
 print("Results of Classification using K-nn with K=1 ")
 for r in range(0,len(x_test)):
