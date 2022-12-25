@@ -9,8 +9,6 @@ X.columns = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width']
 y = pd.DataFrame(iris.target)
 y.columns = ['Targets']
 model = KMeans(n_clusters=3)
-Artificial Intelligence and Machine Learning Lab Manual – 18CSL76
-Department of ISE Page 42
 model.fit(X) 
 plt.figure(figsize=(14,14))
 colormap = np.array(['red', 'lime', 'black'])
